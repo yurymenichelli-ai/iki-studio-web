@@ -1,4 +1,4 @@
-const CACHE='iki-studio-v23';
+const CACHE='iki-studio-v24';
 const ASSETS=['/','/index.html','/manifest.webmanifest','/icons/iki-studio-logo.png'];
 
 self.addEventListener('install',event=>event.waitUntil(
