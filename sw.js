@@ -1,4 +1,4 @@
-const CACHE='iki-studio-auth-debug-v5';
+const CACHE='iki-studio-proxy-v6';
 const ASSETS=['/','/index.html','/manifest.webmanifest','/icons/iki-studio-logo.png'];
 
 self.addEventListener('install',event=>event.waitUntil(
