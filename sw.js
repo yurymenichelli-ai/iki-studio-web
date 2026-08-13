@@ -1,4 +1,4 @@
-const CACHE='iki-studio-auth-fallback-v3';
+const CACHE='iki-studio-auth-fallback-v4';
 const ASSETS=['/','/index.html','/manifest.webmanifest','/icons/iki-studio-logo.png'];
 
 self.addEventListener('install',event=>event.waitUntil(
