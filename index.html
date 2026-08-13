@@ -82,7 +82,7 @@
 <main id="root"></main>
 <script type="module">
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
-const SUPABASE_URL='https://dlvzeudetcknacgwybnw.supabase.co',SUPABASE_KEY='sb_publishable_p0hmFGquUZRtOA9EWGrZQw_A1uGWa_G';
+const SUPABASE_URL=location.origin+'/api/supabase',SUPABASE_KEY='sb_publishable_p0hmFGquUZRtOA9EWGrZQw_A1uGWa_G';
 const supabase=createClient(SUPABASE_URL,SUPABASE_KEY);
 const root=document.querySelector('#root');let movements=[],categories=[],recurrings=[],goals=[],section='overview',selectedMonth=new Date().toISOString().slice(0,7),status='all',ownerFilter='all',freshMovementId=null,clientFilter='',monitorRange='month',monitorKind='all',monitorFrom='',monitorTo='';
 const euro=n=>new Intl.NumberFormat('it-IT',{style:'currency',currency:'EUR'}).format(n||0);const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
