@@ -1,5 +1,5 @@
-const CACHE='iki-studio-password-1786624814900';
-const ASSETS=['/','/index.html','/manifest.webmanifest','/icons/iki-studio-password-1786624814900.png'];
+const CACHE='iki-studio-login-fix-v2';
+const ASSETS=['/','/index.html','/manifest.webmanifest','/icons/iki-studio-logo.png'];
 
 self.addEventListener('install',event=>event.waitUntil(
   caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())
